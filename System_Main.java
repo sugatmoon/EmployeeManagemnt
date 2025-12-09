@@ -1,20 +1,22 @@
-import java.util.Scanner;
 
 public class System_Main {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        
         boolean flag = true;
         
         System.out.println("***Employee Mangement System***");
+
+        EmployeeData eDAta  = new EmployeeData();
         
         do{
 
             System.out.printf(" 1) VIEW\n 2) ADD\n 3) UPDATE\n 4) DELETE\n 5) EXIT\n\n->");
-            int option = sc.nextInt();
+            int option = Integer.parseInt(IO.readln());
 
             switch (option) {
                 case 1:
+                    eData.viewAll();
                     // VIEW();
                     break;
                 case 2:
@@ -37,7 +39,6 @@ public class System_Main {
             }
         
         }while(flag);
-        
-        sc.close();
+
     }
 }
