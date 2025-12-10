@@ -20,7 +20,7 @@ public class System_Main {
                     // VIEW();
                     break;
                 case 2:
-                    // ADD();
+                    eData.add();
                     break;
                 case 3:
                     // UPDATE();

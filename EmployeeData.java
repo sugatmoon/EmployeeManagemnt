@@ -17,11 +17,30 @@ public EmployeeData() {
     empset.add(emp4);
     empset.add(emp5);
 }  
-   
+
+
+//    View all Employee
     public void viewAll() {
         for (Employee inst : empset ){
             IO.println(inst);
         }
     }
+
+// Adding Employee in the database
+
+    public void add() {
+        int indexId = Integer.parseInt(IO.readln("Enter the Index ID: "));
+        String name = IO.readln("Enter the Name : ");
+        int age = Integer.parseInt(IO.readln("Enter the Age: "));
+        String designation = IO.readln("Enter the Designation: ");
+        String dept = IO.readln("Enter the Department: ");
+        int salary = Integer.parseInt(IO.readln("Enter the Salary: "));
+
+        Employee new_emp = new Employee(indexId, name, age, designation, dept, salary);
+
+        empset.add(new_emp);
+        IO.print("New Employee Added Sucessfully!!!");
+    }
+
 
 }
