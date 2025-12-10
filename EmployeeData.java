@@ -17,5 +17,11 @@ public EmployeeData() {
     empset.add(emp4);
     empset.add(emp5);
 }  
-    
+   
+    public void viewAll() {
+        for (Employee inst : empset ){
+            IO.println(inst);
+        }
+    }
+
 }

@@ -7,7 +7,7 @@ public class System_Main {
         
         System.out.println("***Employee Mangement System***");
 
-        EmployeeData eDAta  = new EmployeeData();
+        EmployeeData eData  = new EmployeeData();
         
         do{
 
