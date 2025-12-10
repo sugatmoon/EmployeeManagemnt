@@ -46,9 +46,12 @@ public class Employee {
 
 
 // toString method Overrided
-    public String toString()  {
-        return salary + name + dept + designation;
+    @Override
+    public String toString() {
+        return "Employee [indexId=" + indexId + ", name=" + name + ", age=" + age + ", designation=" + designation
+                + ", dept=" + dept + ", salary=" + salary + "]";
     }
+    
 
 
     //Contructor of Employee
