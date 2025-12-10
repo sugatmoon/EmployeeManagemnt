@@ -1,5 +1,5 @@
 
-public class System_Main {
+public class SystemMain {
     public static void main(String[] args) {
 
         
@@ -7,7 +7,7 @@ public class System_Main {
         
         System.out.println("***Employee Mangement System***");
 
-        EmployeeData eData  = new EmployeeData();
+        EmployeeData edata  = new EmployeeData();
         
         do{
 
@@ -16,14 +16,14 @@ public class System_Main {
 
             switch (option) {
                 case 1:
-                    eData.viewAll();
+                    edata.viewAll();
                     // VIEW();
                     break;
                 case 2:
-                    eData.add();
+                    edata.add();
                     break;
                 case 3:
-                    // UPDATE();
+                    edata.update();
                     break;
                 case 4:
                     // DELETE();

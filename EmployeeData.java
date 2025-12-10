@@ -43,4 +43,30 @@ public EmployeeData() {
     }
 
 
+    // Updataing Employee Details
+
+        public void update() {
+            int id = Integer.parseInt(IO.readln("Enter ID: "));
+
+            for (Employee inst_emp : empset){
+                if (inst_emp.getId() == id ) {
+                    String name = IO.readln("Enter the Name : ");
+                    int age = Integer.parseInt(IO.readln("Enter the Age: "));
+                    String designation = IO.readln("Enter the Designation: ");
+                    String dept = IO.readln("Enter the Department: ");
+                    int salary = Integer.parseInt(IO.readln("Enter the Salary: "));
+
+
+                    inst_emp.setAge(age);
+                    inst_emp.setName(name);
+                    inst_emp.setDept(dept);
+                    inst_emp.setDesignation(designation);
+                    inst_emp.setSalary(salary);
+
+                    IO.println("Employee Update Sucessfully!!!!!");
+                }
+            }
+        }
+
+
 }
