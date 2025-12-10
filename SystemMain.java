@@ -26,10 +26,9 @@ public class SystemMain {
                     edata.update();
                     break;
                 case 4:
-                    // DELETE();
+                    edata.deleteEmp();
                     break;
                 case 5:
-                    // EXIT();
                     flag = false;
                     System.out.println("EXIT Sucessfully !!!!!!!!");
                     break;

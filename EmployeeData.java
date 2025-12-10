@@ -65,8 +65,22 @@ public EmployeeData() {
 
                     IO.println("Employee Update Sucessfully!!!!!");
                 }
+
             }
         }
+
+    // Delete Employee Details
+
+    public void deleteEmp()  {
+
+        int indexId = Integer.parseInt(IO.readln("Enter Employee Id :"));
+        for(Employee inst_emp: empset) {
+            if (inst_emp.getId() == indexId){
+                empset.remove(inst_emp);
+                IO.print("Delete Employee Sucessfully!!!!");
+            }
+        }
+    }
 
 
 }
